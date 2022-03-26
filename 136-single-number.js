@@ -17,5 +17,3 @@ function singleNumber (nums){
 //
 //
 //
-//
-//
