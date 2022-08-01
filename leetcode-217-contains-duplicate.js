@@ -3,6 +3,7 @@
  * @return {boolean}
  */
 
+//Solution is O(n);
 
 // This is one using a map. Best to use a set, because sets do not contain duplicates
 var containsDuplicateWithMap = function(nums) {
@@ -25,3 +26,5 @@ var containsDuplicate = function(nums) {
     }
     return false;
 };
+
+
