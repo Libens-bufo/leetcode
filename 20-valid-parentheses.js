@@ -14,7 +14,7 @@
     If it is, we pop it off of the stack to eliminate it (its valid)
     When we get to the end, if the stack is empty it means all the parenthesis were closed in the right order.
     */
-    
+
     object = {')':'(', '}':'{', ']':'['} //Map of closing parenthesis - we use this instead of making comparisons
     /*/
     A Map or a list/array is just a better way of making comparisons than using a bunch of condition || condition || condition: DRY.
@@ -34,5 +34,3 @@
     if (stack.length === 0) return true;
     return false;
 }
-
-console.log(isValid('()()[][()]'));
