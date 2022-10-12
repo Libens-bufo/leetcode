@@ -9,7 +9,9 @@
     //Go to next character.
     //If that char/ current character value is less than or equal to the previous, add that to total
     //If current character is greater than previous, add (current - 2 * previousValue)
-//s = "MCMXCIV". //1994
+
+    // ex: s = "MCMXCIV". //1994
+
 map = new Map([
     ['I', 1],['V', 5],['X', 10],['L', 50],['C', 100],['D', 500],['M', 1000]
     ])
@@ -24,6 +26,5 @@ function romanToInt(s){
         else total += (map.get(s[i]) - 2 * map.get(initialValue) )
         initialValue = s[i];
     }
-
     return total;
 }
