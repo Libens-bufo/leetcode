@@ -17,10 +17,8 @@ map = new Map([
     ])
 
 function romanToInt(s){
-
     initialValue = s[0];
     total = map.get(initialValue);
- 
     for(let i = 1; i < s.length; i++){
         if (map.get(s[i]) <= map.get(initialValue)) total += map.get(s[i]);
         else total += (map.get(s[i]) - 2 * map.get(initialValue) )
