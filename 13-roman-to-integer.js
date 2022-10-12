@@ -24,5 +24,6 @@ function romanToInt(s){
         else total += (map.get(s[i]) - 2 * map.get(initialValue) )
         initialValue = s[i];
     }
+    
     return total;
 }
