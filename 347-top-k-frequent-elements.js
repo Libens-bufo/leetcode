@@ -12,7 +12,6 @@
     //Initialize an array and fill it.
     //Iterate through the map: The key gets pushed to the array index === value of key/val
     //Iterate backwards through array to get the k most frequent in order
-  
     const map = {};
     for (let number of nums){
         if (!map[number]) map[number] = 1;
