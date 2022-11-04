@@ -26,7 +26,7 @@
         if (item in object){
             if (stack && stack[stack.length - 1] === object[item]){
                 stack.pop();
-            }
+            }else return false;
         }else{
             stack.push(item);
         }
@@ -34,3 +34,5 @@
     if (stack.length === 0) return true;
     return false;
 }
+
+console.log(isValid('(]'))
